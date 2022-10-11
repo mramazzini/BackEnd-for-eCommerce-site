@@ -12,17 +12,9 @@ Tag.init(
       primaryKey: true,
       autoIncrement: true
     },
-    product_name: {
+    tag_name: {
       type: DataType.STRING,
-      allowNull: false
     },
-    price: {
-      type: DataTypes.DECIMAL,
-      allowNull: false,
-      validate: {
-        isDecimal: true,
-      }
-    }
     
   },
   {
