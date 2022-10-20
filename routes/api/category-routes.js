@@ -72,9 +72,9 @@ router.delete('/:id', async (req, res) => {
         res.status(404).json({ message: "There is no post associated with this id. Please try again..." });
         return;
     }
-    res.status(200).json({ message: "The post got deleted successfully!", data })
+    res.status(200).json({ message: "The post got deleted successfully!", data });
 } catch (err) {
-    res.status(500).json({ message: "An error occured when trying to delete this post. Please try again...", err })
+    res.status(500).json({ message: "An error occured when trying to delete this post. Please try again...", err });
 }
 
 });
