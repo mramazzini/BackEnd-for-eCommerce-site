@@ -66,7 +66,7 @@ res.status(200).json("Succesfully replaced tag");
 router.delete('/:id', async(req, res) => {
   // delete on tag by its `id` value
   try {
-    const data = await Tag.de({
+    const data = await Tag.destroy({
         where: {
             id: req.params.id,
         },
